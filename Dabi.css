@@ -554,11 +554,11 @@ div#lion_image {
 
 div#lion_image::after {
 content: "";
-background: url('https://iili.io/CU8A2Hu.png') no-repeat;
+background: url('https://iili.io/CU8mGVV.png') no-repeat;
 position: absolute;
-transform: translate(-135px, -225px);
-width: 260px;
-height: 250px;
+transform: translate(-142px, -245px);
+width: 284px;
+height: 285px;
 background-size: cover;
 
 }
@@ -572,7 +572,7 @@ table#player img {
 
 /* CIRCULAR LION AND USER AVATAR */
 div#lion_image {
-    border-radius: 50% !important;
+    border-radius: 0% !important;
     overflow: hidden;
     margin-top: 15px;
     /* May need adjusting */
@@ -582,7 +582,7 @@ div#lion_image {
 
 
 table#player img {
-    border-radius: 50% !important;
+    border-radius: 0% !important;
     overflow: hidden
 }
 
