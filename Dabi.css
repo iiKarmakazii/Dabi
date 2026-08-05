@@ -14,7 +14,8 @@ body {
 
     background-size: 100%;
     font-family: "Lobster Two", sans-serif;
-    color: #d9f8f9
+    color: #bbf6ff;
+    
 }
 
 
@@ -179,7 +180,7 @@ h1 {
     font-weight: bolder;
     text-align: center;
     font-family: "Lobster Two", sans-serif;
-    filter: drop-shadow(0 0 2px rgb(11, 4, 4)) 
+    filter: drop-shadow(0 0 2px rgb(202, 93, 93)) 
             drop-shadow(1px 1px 1px rgba(71, 82, 174));
 }
 
@@ -269,7 +270,10 @@ h3 {
 
 .s-chat-message__pinned/* Pinned Message */
 {
-    background: #9c4d4d7d !important;
+    background: linear-gradient( 180deg,
+    rgba(56, 73, 173, .8),
+    rgba(40, 28, 130, .85),
+    rgba(21, 8, 59, .9))!important;
     color: #fff !important;
     border: none !important
 }
@@ -347,7 +351,7 @@ td.bottom a {
 /* Color behind the number of all of the things above */
 .inner-table .right {
     background: none;
-    border-radius: 10px !important
+    border-radius: 5px !important
 }
 
 
@@ -397,8 +401,9 @@ div.left {
 
 /* Block of color behind "Territory Description, Player Name, Avatar URL" etc. */
 .table .left {
-    background: rgba(1, 1, 1, 0.5);
-    border-radius: 0px
+    background: rgb(162 148 104 / .5);
+    border-radius: 0px;
+    border-right: 2px ridge rgba(183, 165, 110, .95) !important;
 }
 
 
@@ -406,9 +411,9 @@ div.left {
 input,
 select,
 textarea {
-    background: rgba(25, 2, 2, .28) !important;
-    border: none !important;
-    border-radius: 10px !important;
+    background: rgba(139, 121, 66, .27) !important;
+    border: 2px ridge rgba(246, 227, 167, .95) !important;
+    border-radius: 5px !important;
     color: #fff !important;
     box-shadow: none !important;
     text-shadow: none !important
@@ -420,7 +425,7 @@ textarea {
 /* Copyright, Terms of Service, CoC, etc. */
 div.container.footer.center.white.visible-lg.visible-md.visible-sm,
 div.container.footer.center.white.visible-lg.visible-md.visible-sm a {
-    color: #000000 !important;
+    color: #fff !important;
     text-shadow: none !important
 }
 
@@ -452,67 +457,77 @@ a:hover {
 
 
 
+
+
+.boxcontainer {
+	background: none;
+	height: auto;
+	padding: 0px;
+	justify-content: center;
+	display: flex
+}
+
 /* HOVER BOXES */
-.smallhoverbox {
-    float: left;
-    background: rgba(1, 1, 1, 0.5);
-    color: #000000;
-    padding: 10px;
-    border: none;
-    border-radius: 0px;
-    margin: 10px;
-    height: 50px;
-    width: 28.4%;
-    overflow: auto;
-    transition: 3s
+.scrollSection {
+    display: flex;
+    justify-content: center;
+}
+
+.smallhoverbox1 {
+	float: left;
+	background:linear-gradient( 180deg,
+    rgb(60 49 192 / .6),
+    rgba(12, 24, 107, .6),
+    rgba(2, 1, 18, .6)) !important;
+    box-shadow: 1px 1px 4px rgb(211, 209, 141)!important;
+    background-size: 155%; 
+background-repeat: no-repeat; 
+	color: #fff;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+	padding: 0px;
+	border: 2px ridge #e5d06c!important;
+	border-radius: 5px;
+	margin: 15px;
+	height: 65px;
+	width: 50.4%;
+	overflow: auto;
+ transition: 2s
+}h2 {
+  color: rgb(254,254,254); 
+
+
+}
+
+.smallhoverbox2 {
+	float: left;
+	background:linear-gradient( 180deg,
+    rgb(60 49 192 / .6),
+    rgba(12, 24, 107, .6),
+    rgba(2, 1, 18, .6)) !important;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+     box-shadow: 1px 1px 4px rgb(211, 209, 141)!important;
+	color: #fff;
+	padding: 0px;
+	border: 2px ridge #e5d06c!important;
+	border-radius: 5px;
+	margin: 15px;
+	height: 65px;
+	width: 50.4%;
+	overflow: auto;
+        transition: 2s
+}
+
+.smallhoverbox1:hover {
+	height: 350px;
+	width: 50.4%;
 }
 
 
-.smallhoverbox:hover {
-    height: 150px;
-    width: 28.4%;
-}
 
 
-.mediumhoverbox {
-    float: left;
-    background: rgba(1, 1, 1, 0.5);
-    color: #000000;
-    padding: 10px;
-    border: none;
-    border-radius: 0px;
-    margin: 10px;
-    height: 50px;
-    width: 43.8%;
-    overflow: auto;
-    transition: 3s
-}
-
-
-.mediumhoverbox:hover {
-    height: 150px;
-    width: 43.8%;
-}
-
-
-.largehoverbox {
-    float: left;
-    background: rgba(1, 1, 1, 0.5);
-    color: #000000;
-    padding: 10px;
-    border: none;
-    border-radius: 0px;
-    margin: 10px;
-    height: 150px;
-    width: 90%;
-    overflow: auto;
-    transition: 3s
-}
-
-
-.largehoverbox:hover {
-    height: 150px;
-    width: 90%;
+.smallhoverbox2:hover {
+	height: 350px;
+	width: 50.4%;
 }
 
 
@@ -528,7 +543,7 @@ a:hover {
 /* BACKGROUND */
 ::-webkit-scrollbar-track {
 
-    background:#000;
+    background:#0000;
 }
 
 
@@ -537,7 +552,7 @@ a:hover {
 /* "THUMB" */
 ::-webkit-scrollbar-thumb {
   
-    background: rgb(59, 27, 108);
+    background: rgb(92, 51, 153);
     border-radius: 5px
     
 }
